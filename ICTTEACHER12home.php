@@ -51,13 +51,13 @@ if ($_SESSION['user']['role'] !== 'ICTteacher12') {
 
         <section>
 
-            <a href="ICT12hands1.php"><div class="folders">
+           <div class="folders">
                 <div class="folder-module1-2">
-                   <img class="folder" src="img/folderblue.png">
+                <a href="ICT12hands1.php"><img class="folder" src="img/folderblue.png"></a>
                    <p>Handouts 1-2</p>
                 </div>
                 <div class="unique-sub">
-                   <img class="folder" src="img/folderblue.png">
+                   <a href="ICT12hands2.php"><img class="folder" src="img/folderblue.png"></a>
                    <p>TVL-ICT track</p>
                 </div>
                  </div>
