@@ -190,34 +190,7 @@ if (isset($_GET['delete_image'])) {
         </header>
 
         <section>
-            <div class="left-sidebar">
-                <div class="profile">
-                    <img class="profile-picture" src="img/blob.jpg">
-                    <div class="student-info">
-                        <p>Adviser</p>
-                        <p class="strand">ICT12</p>
-                        <div class="students-ict">
-                            <?php
-                                include "database.php";
-                            
-                                $role = 'ICT12'; 
-                            
-                                $sql = "SELECT id, full_name FROM users WHERE role = '$role'";
-                                $users_result = mysqli_query($conn, $sql) or die("Error in SQL query");
-
-                                if (mysqli_num_rows($users_result) > 0) {
-                                    while ($user = mysqli_fetch_assoc($users_result)) {
-                                        $full_name = $user['full_name'];
-                                        echo " $full_name</p>";
-
-                                    
-                                    }
-                                } else {
-                                    echo "No ICT students found.";
-                                }
-                                ?>
-                        </div>
-                </div>
+            
                    
                 </div>
                 
